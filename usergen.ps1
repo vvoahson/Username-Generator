@@ -16,10 +16,12 @@ foreach ($name in $names) {
     # Generate the usernames
     $username1 = "$firstName.$lastName"
     $username2 = "$($firstName[0])$lastName"
+    $username3 = "$firstName$($lastName[0])"
     
     # Add the usernames to the array
     $usernames += $username1
     $usernames += $username2
+    $usernames += $username3
 }
 
 # Set the output file path relative to the current directory
